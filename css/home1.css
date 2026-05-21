@@ -1,6 +1,78 @@
 .top-bar{
     background-color: #0d4b46;
 }
+.dropdown-menu{
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.dropdown-item{
+    padding: 18px 30px;
+    font-size: 20px;
+    border-bottom: 1px solid #eee;
+}
+.dropdown-nav{
+    position: relative;
+}
+
+.nav-link-custom{
+    font-size: 18px;
+}
+
+.custom-dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 220px;
+
+    background-color: white;
+
+    padding: 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+    z-index: 999;
+}
+
+.custom-dropdown li a{
+    display: block;
+
+    padding: 18px 25px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    border-bottom: 1px solid #eee;
+}
+
+.custom-dropdown li:first-child a{
+    background-color: #18b26a;
+    color: white;
+}
+
+.dropdown-nav:hover .custom-dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+
+.active-menu{
+    background-color: #18b26a;
+    color: white;
+}
+
+.active-menu{
+    background-color: #18b26a;
+    color: white;
+}
 .col-lg-6 h1{
  font-size: 62px;
 }
@@ -201,6 +273,61 @@ padding-left: 10px;
 }
 .subscribe-section{
     background-color: #0d4b46;
+}
+.play-btn-news{
+    width: 130px;
+    height: 130px;
+
+    background-color: #18b26a;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 45px;
+    color: white;
+
+    z-index: 2;
+}
+
+/* transparent outer circle */
+
+.play-btn-news::after{
+    content: "";
+
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    background-color: rgba(255,255,255,0.3);
+
+    border-radius: 50%;
+
+    z-index: -1;
+
+    transform: scale(0);
+
+    transition: 0.4s;
+}
+
+/* hover effect */
+
+.play-btn-news:hover::after{
+    transform: scale(0.6);
+}
+
+.play-btn-news:hover i{
+    color: black;
 }
 .play-btn-news{
 
