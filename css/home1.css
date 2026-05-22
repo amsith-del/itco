@@ -854,3 +854,117 @@ hr{
 
     z-index: 999;
 }
+.mobile-nav{
+   background-color: #0d4b46;
+}
+@media(max-width:992px){
+    .top-bar{
+        display: none;
+    }
+   .mobile-nav{
+  border-bottom: 1px solid #1b6666;
+}
+.hero-heading{
+ font-size: 48px;
+ 
+}
+.subject-img{
+    display: none;
+}
+.hero-img{
+    width: 800px;
+}
+.main-about-img{
+    border-radius: 300px;
+    width: 600px;
+    height: auto;
+}
+.small-about-img{
+
+    position: absolute;
+
+    right: 10px;
+    bottom: -10px;
+
+    width: 400px;
+
+    border-radius: 50%;
+
+    border: 10px solid white;
+}
+.abouth1{
+    font-size: 42px;
+    font-weight: bold;
+}
+.about-content{
+    margin-top: 50px;
+}
+.abouth1{
+    font-size: 42px;
+}
+.project-content h4{
+    font-size: 16px;
+}
+.sucess-img{
+    margin-top: 50px;
+}
+.counter-box{
+    
+    border-radius: 0px;
+}
+.review-text h2{
+ font-size: 24px;
+}
+.review-text p{
+ font-size: 16px;
+}
+}
+@media(max-width:524px){
+.hero-heading{
+    font-size: 38px !important;
+}
+.small-about-img{
+    width: 200px;
+}
+.about-content{
+    padding-left: 20px !important;
+}
+.abouth1{
+    font-size: 32px !important;
+    margin-top: 10px;
+}
+.project-img {
+    margin-top: 15px !important;
+}
+.success-heading{
+    font-size: 31px;
+}
+.success-content{
+    padding-left: 30px;
+}
+.success-para{
+    font-size: 18px;
+}
+.pricing-heading{
+    font-size: 38px;
+}
+.client-heading{
+    font-size: 20px;
+}
+.client-logo{
+    font-size: 10px;
+}
+.testimonial-heading{
+    font-size: 30px;
+}
+.blog-heading{
+    font-size: 32px;
+}
+.blog-para{
+    font-size: 10px;
+}
+.copyright-text{
+    font-size: 18px;
+    color: white;
+}
+}
