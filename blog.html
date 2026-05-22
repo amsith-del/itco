@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog details </title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/blog.css" />
+</head>
+<body>
+    <!-- Top Bar -->
+    <section id="about-top" class="top-bar py-3">
+      <div class="container d-flex justify-content-between">
+        <div class="d-flex gap-4 align-items-center">
+          <p class="text-white m-0">
+            <i class="bi bi-geo-alt-fill me-2"></i>Jones Street, New York, USA
+          </p>
+          <p class="text-white m-0">
+            <i class="bi bi-envelope-fill me-2"></i> info@example.com
+          </p>
+          <p class="text-white m-0">
+            <i class="bi bi-telephone-fill me-2"></i>+70 264 566 579
+          </p>
+        </div>
+        <div class="d-flex gap-3">
+          <i class="bi bi-facebook text-white"></i>
+
+          <i class="bi bi-linkedin text-white"></i>
+
+          <i class="bi bi-twitter text-white"></i>
+
+          <i class="bi bi-instagram text-white"></i>
+        </div>
+      </div>
+    </section>
+    <!-- Nav Bar -->
+
+    <nav class="nav-section ">
+      <div class="container-fluid px-0">
+        <div class="bg-white p-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <img src="./images/Mobile-view-homeimages/image (1).png" alt="" />
+
+            <ul class="d-flex gap-4 list-unstyled m-0">
+              <li class="dropdown-nav">
+                <a
+                  href="#"
+                  class="text-decoration-none text-muted fs-6 fw-bold nav-link-custom"
+                >
+                  Home <i class="bi bi-chevron-down"></i
+                ></a>
+                <ul class="custom-dropdown list-unstyled m-0">
+                  <li><a href="#">Home One</a></li>
+                  <li><a href="#">Home Two</a></li>
+                  <li><a href="#">Home Three</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./about.html" class="text-decoration-none fw-bold  text-muted fs-6"
+                  >About</a
+                >
+              </li>
+              <li class="dropdown-nav">
+                <a
+                  href="./services.html"
+                  class="text-decoration-none text-muted fs-6 fw-bold  nav-link-custom"
+                >
+                  Services <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <ul class="custom-dropdown list-unstyled m-0">
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Service Details</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-nav">
+                <a
+                  href="./pages.html"
+                  class="text-decoration-none text-muted fw-bold  fs-6 nav-link-custom"
+                >
+                  Pages <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <ul class="custom-dropdown list-unstyled m-0">
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Team Details</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Project Details</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Price Plan</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">404</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-nav">
+                <a
+                  href="./blog.html"
+                  class="text-decoration-none text-success fs-6 fw-bold  nav-link-custom"
+                >
+                  Blog <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <ul class="custom-dropdown list-unstyled m-0">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Blog Details</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./contact.html" class="text-decoration-none fw-bold  text-muted fs-6"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+
+            <button class="btn btn-success fw-bold px-5 py-3 rounded-4">
+              Get A Free Quote
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="about-banner">
+  <div class="container-fluid px-4">
+    <div class="row align-items-center">
+
+      <!-- LEFT -->
+      <div class="col-lg-6">
+        <h1 class="about-title">Blog Details</h1>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-lg-6">
+        <div class="breadcrumb-box">
+          <a href="./home1.html">Home</a>
+
+          <i class="bi bi-chevron-right"></i>
+
+          <span>Blog Detail</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+</section>
+<section class="blog-details py-5">
+
+  <div class="container-fluid">
+
+    <div class="row gy-5">
+
+      <!-- LEFT SIDE -->
+      <div class="col-lg-8">
+
+        <img
+          class="img-fluid rounded-4 mb-4"
+          src="./images/Blog-images/image (2).png"
+          alt=""
+        >
+
+        <!-- Meta -->
+        <div class="d-flex flex-wrap gap-4 mb-4 blog-meta">
+
+          <div>
+            <i class="bi bi-person text-success me-2"></i>
+            Admin
+          </div>
+
+          <div>
+            <i class="bi bi-calendar3 text-success me-2"></i>
+            October 2, 2023
+          </div>
+
+          <div>
+            <i class="bi bi-chat text-success me-2"></i>
+            Comment (03)
+          </div>
+
+        </div>
+
+        <!-- Title -->
+        <h2 class="blog-title  mb-4">
+          Everything you need to learn about
+          IT Solution for your Company.
+        </h2>
+
+        <p class="mb-4 title">
+          With over a decade of experience, we’ve established ourselves as one of the pioneering agencies in the . Our small, flexible, agile and design-led structures and processes allow us to be highly responsive and innovative.
+           We’re made of passionate leaders, strategists, managers, developers, animators designer who work gether under one umbrella. We are a digitally-led, full-service creative agency.
+
+The European languag are member of the same family. Their separate existence is a myth. Europe same science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their samepronunciation and their most common words.
+        </p>
+
+        <!-- Quote Box -->
+        <div class="quote-box d-flex gap-4 rounded-4 p-3 my-3">
+
+          <i class="bi bi-quote quote-icon"></i>
+
+          <p class="mb-0">
+           Majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable ”
+          </p>
+          
+
+        </div>
+        <p>Everyone realizes why a new common language would be desirable: one could refuse to necessary have uniform translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more words. If several languages coalesce, the grammar of the resulting language is simple and regular than that of the individual languages. The new common language will be more simple and regular than the existin languages samepronunciation and their most common words.</p>
+        <h2>Perfect From Beginning to End</h2>
+
+    <p class="solution-text">
+        Transfer details Choose the amount you want to send abroad,
+        select how your receiver wants to get the money, and lastly,
+        how you want to pay. You will always see our fees upfront,
+        the final amount you will pay, and the exact amount your
+        receiver will get.
+    </p>
+     <div class="solution-list">
+
+        <div class="solution-item">
+            <span class="circle"></span>
+            <p>Aliquam Eros Justo, Posuere Loborti Robart That</p>
+        </div>
+
+        <div class="solution-item">
+            <span class="circle"></span>
+            <p>Fermentum Ullamcorper Viverra Laoreet</p>
+        </div>
+
+        <div class="solution-item">
+            <span class="circle"></span>
+            <p>Lobortis, Viverra Laoreet Augue Attis Hrculies</p>
+        </div>
+
+        <div class="solution-item">
+            <span class="circle"></span>
+            <p>Fermentum Ullamcorper Viverra Laoreet</p>
+        </div>
+
+    </div>
+        <!-- Tag & Share -->
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-4 py-4 border-top border-bottom mt-5" >
+
+          <div class="d-flex gap-3 flex-wrap">
+
+            <h6 class="mb-0">Tag:</h6>
+
+            <a href="#" class="tag-link">#Technology</a>
+
+            <a href="#" class="tag-link">#IT Business</a>
+
+          </div>
+
+          <div class="d-flex align-items-center gap-3">
+
+            <h5 class="mb-0">Share:</h5>
+
+            <div class="social-icons d-flex gap-3">
+
+              <a href="#"><i class="bi bi-facebook"></i></a>
+
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+
+              <a href="#"><i class="bi bi-twitter"></i></a>
+
+              <a href="#"><i class="bi bi-instagram"></i></a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Author -->
+        <div class="author-box rounded-4 p-3 mt-5 d-flex gap-4">
+
+          <img
+            class="author-img"
+            src="./images/Blog-images/image (3).png"
+            alt=""
+          >
+
+          <div>
+
+            <h3>Ronald Richards</h3>
+
+            <p>Founder & CEO</p>
+            Delicate and specialty items are handled with the utmost care. We have specialized processes for such items to ensure they are cleaned gently and returned to you in pristine condition.
+
+            
+
+          </div>
+          <div class="social-icons d-flex gap-3">
+
+              <a href="#"><i class="bi bi-facebook"></i></a>
+
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+
+              <a href="#"><i class="bi bi-twitter"></i></a>
+
+              <a href="#"><i class="bi bi-instagram"></i></a>
+
+            </div>
+
+        </div>
+
+        <!-- Comments -->
+        <div class="mt-5">
+
+          <h2 class="mb-5">Comments (03)</h2>
+
+          <div class="comment-box d-flex gap-4 border-bottom pb-2 mb-5">
+
+            <img
+              class="comment-img"
+              src="./images/Blog-images/image.jpg"
+              alt=""
+            >
+
+            <div>
+
+              <div class="d-flex justify-content-between flex-wrap gap-3">
+
+                <div>
+
+                  <h4>Brooklyn Simmons</h4>
+
+                  <p>
+                    <i class="bi bi-calendar3 text-success me-2"></i>
+                    28 April, 2023
+                  </p>
+
+                </div>
+
+                <button class="reply-btn">
+                  Reply <i class="bi bi-reply-fill"></i>
+                </button>
+
+              </div>
+
+              <p>
+                There are many different types of roofing materials to choose from, including asphalt shingles, Metal roofing, wood shakes, clay tiles, and slate. Each material has its
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="mt-1">
+
+          <h2 class="mb-5"></h2>
+
+          <div class="comment-box d-flex gap-4 border-bottom pb-2 mb-5">
+
+            <img
+              class="comment-img"
+              src="./images/Blog-images/image.jpg"
+              alt=""
+            >
+
+            <div>
+
+              <div class="d-flex justify-content-between flex-wrap gap-3">
+
+                <div>
+
+                  <h4>Marvin McKinney</h4>
+
+                  <p>
+                    <i class="bi bi-calendar3 text-success me-2"></i>
+                    20 October, 2023
+                  </p>
+
+                </div>
+
+                <button class="reply-btn">
+                  Reply <i class="bi bi-reply-fill"></i>
+                </button>
+
+              </div>
+
+              <p>
+                Is a statement that highlights the importance of providing high-quality auto repair services. It suggests that the company or individual
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="mt-5">
+
+          <h2 class="mb-5"></h2>
+
+          <div class="comment-box d-flex gap-4 border-bottom pb-2 mb-5">
+
+            <img
+              class="comment-img"
+              src="./images/Blog-images/image.jpg"
+              alt=""
+            >
+
+            <div>
+
+              <div class="d-flex justify-content-between flex-wrap gap-3">
+
+                <div>
+
+                  <h4>Ronald Richards</h4>
+
+                  <p>
+                    <i class="bi bi-calendar3 text-success me-2"></i>
+                    06 June, 2023
+                  </p>
+
+                </div>
+
+                <button class="reply-btn">
+                  Reply <i class="bi bi-reply-fill"></i>
+                </button>
+
+              </div>
+
+              <p>
+              There are many different types of roofing materials to choose from, including asphalt shingles, Metal roofing, wood shakes, clay tiles, and slate. Each material has its 
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+        
+
+        <!-- Comment Form -->
+        <div class="comment-form rounded-4 p-5 mt-5">
+
+          <h2>Add Your Comment</h2>
+
+          <p class="mb-5">
+            Get in touch with us to see how we can help you.
+          </p>
+
+          <div class="row g-4">
+
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Name"
+              >
+            </div>
+
+            <div class="col-md-6">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter Email"
+              >
+            </div>
+
+            <div class="col-12">
+              <textarea
+                class="form-control"
+                rows="6"
+                placeholder="Enter Message..."
+              ></textarea>
+            </div>
+
+            <div class="col-12">
+              <button class="submit-btn">
+                Submit Now
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="col-lg-4">
+
+        <!-- Search -->
+        <div class="sidebar-box rounded-4 mb-5">
+
+          <h2 class="mb-4">Search</h2>
+
+          <div class="search-box d-flex align-items-center">
+
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search here..."
+            >
+
+            <i class="bi bi-search"></i>
+
+          </div>
+
+        </div>
+
+        <!-- Categories -->
+        <div class="sidebar-box rounded-4 mb-5">
+
+          <h2 class="mb-4">Categories</h2>
+
+          <div class="d-flex flex-column gap-4">
+
+            <a href="#" class="category-item">
+              Content Management
+              <i class="bi bi-arrow-right"></i>
+            </a>
+
+            <a href="#" class="category-item">
+              Information Security
+              <i class="bi bi-arrow-right"></i>
+            </a>
+
+            <a href="#" class="category-item">
+              Software Development
+              <i class="bi bi-arrow-right"></i>
+            </a>
+
+          </div>
+          <!-- RECENT POSTS -->
+<div class="sidebar-box">
+
+    <h2 class="mb-5">Recent Posts</h2>
+
+    <!-- Post -->
+    <div class="recent-post">
+
+        <img src="./images/Blog-images/image (4).png" alt="">
+
+        <div class="recent-content">
+
+            <p class="post-date">
+                <i class="bi bi-calendar3"></i>
+                Oct 2, 2023
+            </p>
+
+            <h4>
+                Efficiency redefined
+                through technology.
+            </h4>
+
+        </div>
+
+    </div>
+
+    <!-- Post -->
+    <div class="recent-post">
+
+        <img src="./images/Blog-images/image (5).png" alt="">
+
+        <div class="recent-content">
+
+            <p class="post-date">
+                <i class="bi bi-calendar3"></i>
+                Oct 2, 2023
+            </p>
+
+            <h4>
+                IT Solution for your
+                Company.
+            </h4>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- TAGS -->
+<div class="sidebar-box mt-5 ">
+
+    <h2>Tags</h2>
+
+    <div class="tags-wrapper ">
+
+        <a href="#">Interiour</a>
+        <a href="#">Software</a>
+        <a href="#">Design</a>
+        <a href="#">Web Planting</a>
+        <a href="#">Daily Inspiration</a>
+
+    </div>
+
+</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+   <section class="newsletter-section">
+  <div class="container-fluid px-3">
+    <div class="newsletter-bg rounded-4">
+
+      <div class="row align-items-center">
+
+        <!-- LEFT TEXT -->
+        <div class="col-lg-6">
+          <h2 class="newsletter-title">
+            Subscribe to Our Newsletter for
+            <br>
+            the daily Updates
+          </h2>
+        </div>
+
+        <!-- RIGHT INPUT -->
+        <div class="col-lg-6">
+          <div class="newsletter-input-box">
+
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              class="newsletter-input"
+            >
+
+            <button class="newsletter-btn">
+              Subscribe
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+ <footer class="footer-section">
+      <div class="container">
+        <div class="row gy-5">
+          <!-- LEFT -->
+          <div class="col-lg-4">
+            <img
+              src="./images/Mobile-view-homeimages/image.png"
+              class="footer-logo"
+              alt=""
+            />
+
+            <p class="footer-text mt-5">
+              Mauris ut enim sit amet lacus ornare ullamcor. Praesent placerat
+              nequ puru rhoncu tincidunt odio ultrices. Sed odio feugiat feugiat
+              felis.
+            </p>
+
+            <!-- Social -->
+            <div class="d-flex gap-3 mt-5">
+              <div class="social-icon">
+                <i class="bi bi-facebook"></i>
+              </div>
+
+              <div class="social-icon">
+                <i class="bi bi-linkedin"></i>
+              </div>
+
+              <div class="social-icon">
+                <i class="bi bi-twitter"></i>
+              </div>
+
+              <div class="social-icon">
+                <i class="bi bi-instagram"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICES -->
+          <div class="col-lg-2">
+            <h3 class="footer-title">Our Services</h3>
+
+            <ul class="footer-links">
+              <li>Tech Solutions</li>
+              <li>Digital Marketing</li>
+              <li>Web Development</li>
+              <li>IT Consulting</li>
+              <li>Data Analytics</li>
+            </ul>
+          </div>
+
+          <!-- LINKS -->
+          <div class="col-lg-2">
+            <h3 class="footer-title">Useful Links</h3>
+
+            <ul class="footer-links">
+              <li>What We Do</li>
+              <li>Our Team</li>
+              <li>Our Projects</li>
+              <li>Faq ask</li>
+              <li>Contact Us</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+
+          <!-- RECENT POST -->
+          <div class="col-lg-4">
+            <h3 class="footer-title">Recent Post</h3>
+
+            <!-- POST -->
+            <div class="recent-post d-flex gap-3">
+              <img
+                src="./images/Mobile-view-homeimages/image (22).png"
+                class="recent-post-img"
+                alt=""
+              />
+
+              <div>
+                <div class="d-flex align-items-center gap-2 footer-date">
+                  <i class="bi bi-calendar4-week"></i>
+
+                  <span>Dec 27, 2023</span>
+                </div>
+
+                <h4 class="recent-post-title">
+                  Efficiency redefined through technology.
+                </h4>
+              </div>
+            </div>
+
+            <!-- POST -->
+            <div class="recent-post d-flex gap-3 mt-4">
+              <img
+                src="./images/Mobile-view-homeimages/image (23).png"
+                class="recent-post-img"
+                alt=""
+              />
+
+              <div>
+                <div class="d-flex align-items-center gap-2 footer-date">
+                  <i class="bi bi-calendar4-week"></i>
+
+                  <span>Dec 27, 2023</span>
+                </div>
+
+                <h4 class="recent-post-title">IT Solution for your Company.</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="copyright-area">
+        <div class="container text-center">
+          <p class="copyright-text mb-0">
+            © <span>Qubohub</span> 2024. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <a href="#about-top">
+      <button class="scroll-top">
+        <i class="bi bi-chevron-double-up"></i></button
+    ></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
