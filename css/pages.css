@@ -361,7 +361,10 @@
     .footer-links{
         padding-left: 30px;
     }
-    .breadcrumb-box{
+   
+}
+@media(max-width:542px){
+ .breadcrumb-box{
         padding-right: 60px;
     }
     .about-title{
