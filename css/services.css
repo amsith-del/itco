@@ -517,3 +517,48 @@ padding-left: 10px;
 
     z-index: 999;
 }
+.mobile-nav{
+   background-color: #0d4b46;
+}
+@media(max-width:992px){
+    .top-bar{
+        display: none;
+    }
+    .mobile-nav {
+        position: sticky;
+        top: 0px;
+        z-index: 9999;
+    }
+}
+@media(max-width:554px){
+    .about-title{
+        font-size: 42px;
+        text-align: center;
+    }
+    .breadcrumb-box{
+        padding-right: 60px;
+    }
+    .newsletter-content{
+        padding: 12px !important;
+    }
+    .newsletter-heading{
+        font-size: 32px;
+    }
+    .email-input{
+        width: 60%;
+        padding: 10px;
+        padding-left: 17px;
+    }
+    .subscribe-btn{
+        font-size: 18px;
+    }
+    .text-content h4{
+        font-size: 22px;
+    }
+    .copyright-text{
+        font-size: 18px;
+    }
+    .newsletter-title{
+        font-size: 24px;
+    }
+}
