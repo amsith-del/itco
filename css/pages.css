@@ -337,3 +337,44 @@
 
     z-index: 999;
 }
+.mobile-nav{
+   background-color: #0d4b46;
+}
+@media(max-width:992px){
+    .top-bar{
+        display: none;
+    }
+     .mobile-nav {
+        position: sticky;
+        top: 0px;
+        z-index: 9999;
+    }
+    .breadcrumb-box{
+        text-align: center;
+    }
+    .team-heading{
+        font-size: 42px;
+    }
+    .footer-title{
+        padding-left: 30px;
+    }
+    .footer-links{
+        padding-left: 30px;
+    }
+    .breadcrumb-box{
+        padding-right: 60px;
+    }
+    .about-title{
+        text-align: center;
+        font-size: 42px;
+    }
+    .team-heading{
+        font-size: 34px;
+    }
+    .newsletter-title{
+        font-size: 20px;
+    }
+    .copyright-text{
+        font-size: 18px;
+    }
+}
