@@ -380,3 +380,85 @@
 
     z-index: 999;
 }
+.mobile-nav{
+        background-color:#0d4b46 ;
+    }
+.nav-down-line{
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 30px;
+    padding: 0px;
+}
+
+@media(max-width:992px){
+    .top-bar{
+        display: none;
+    }
+    .blog-title{
+        font-size: 32px;
+    }
+      .footer-title-down{
+        padding-left: 5px;
+    }
+    .footer-links{
+        padding-left: 50px;
+    }
+    .map-section{
+        height: 400px;
+    }
+}
+@media(max-width:564px){
+     .breadcrumb-box{
+        padding-right: 60px;
+       
+    }
+    .about-title{
+        text-align: center;
+        font-size: 28px;
+    }
+    .breadcrumb-box a{
+        font-size: 24px;
+    }
+     .breadcrumb-box span{
+        font-size: 22px;
+    }
+    .blog-title{
+        font-size: 28px;
+    }
+     .map-section{
+        height: 200px;
+    }
+     .newsletter-title{
+        font-size: 20px;
+    }
+    .copyright-text{
+        font-size: 18px;
+    }
+    .contact-title{
+        font-size: 24px;
+    }
+    .form-control{
+        font-size: 22px;
+    }
+    .contact-content h4{
+        font-size: 18px;
+    }
+     .contact-content p{
+        font-size: 14px;
+    }
+    .newsletter-input{
+        font-size: 18px;
+        
+    }
+    .newsletter-input-box{
+        padding: 3px 4px;
+    }
+    .newsletter-btn{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .send-btn{
+        padding: 10px 20px ;
+        font-size: 16px;
+    }
+}
