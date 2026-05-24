@@ -500,3 +500,80 @@ textarea.form-control{
 
     z-index: 999;
 }
+ .mobile-nav{
+        background-color:#0d4b46 ;
+    }
+.nav-down-line{
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 30px;
+    padding: 0px;
+}
+.pagination-box{
+    margin-top: 40px;
+}
+
+.page-btn{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.active-page{
+    background-color: #18b26a;
+    color: white;
+    border-color: #18b26a;
+}
+
+.page-btn:hover{
+    background-color: #18b26a;
+    color: white;
+    border-color: #18b26a;
+}
+@media(max-width:992px){
+    .top-bar{
+        display: none;
+    }
+    .blog-title{
+        font-size: 32px;
+    }
+      .footer-title-down{
+        padding-left: 5px;
+    }
+    .footer-links{
+        padding-left: 50px;
+    }
+   
+}
+@media(max-width:564px){
+     .breadcrumb-box{
+        padding-right: 60px;
+       
+    }
+    .about-title{
+        text-align: center;
+        font-size: 28px;
+    }
+    .breadcrumb-box a{
+        font-size: 24px;
+    }
+     .breadcrumb-box span{
+        font-size: 22px;
+    }
+    .blog-title{
+        font-size: 28px;
+    }
+     .newsletter-title{
+        font-size: 20px;
+    }
+    .copyright-text{
+        font-size: 18px;
+    }
+}
