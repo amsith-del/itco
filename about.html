@@ -139,12 +139,170 @@
         alt=""
       >
 
-      <i class="bi bi-list text-white fs-1"></i>
+            <button
+  class="border-0 bg-transparent"
+  data-bs-toggle="offcanvas"
+  data-bs-target="#mobileMenu"
+>
+  <i class="bi bi-list text-white fs-1"></i>
+</button>
 
     </div>
 
   </div>
 </nav>
+  <!-- MOBILE SIDEBAR -->
+    <div
+      class="offcanvas offcanvas-start mobile-sidebar d-block d-lg-none"
+      tabindex="-1"
+      id="mobileMenu"
+    >
+      <!-- HEADER -->
+      <div class="offcanvas-header border-bottom">
+        <img src="./images/logo.png" width="120" alt="" />
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <!-- BODY -->
+      <div class="offcanvas-body">
+        <ul class="list-unstyled mobile-menu">
+          <!-- HOME -->
+          <li>
+            <div
+              class="menu-item single-menu active-menu"
+              data-bs-toggle="collapse"
+              data-bs-target="#homeMenu"
+            >
+              <span class="text-dark">Home</span>
+              <i class="bi bi-chevron-down text-dark"></i>
+            </div>
+
+            <ul class="collapse show submenu list-unstyled" id="homeMenu">
+              <li class="text-decoration-none text-white">
+                <a href="./home1.html">Home One</a>
+              </li>
+
+              <li>
+                <a href="#">Home Two</a>
+              </li>
+
+              <li>
+                <a href="#">Home Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ABOUT -->
+          <li>
+            <a href="./about.html" class="text-decoration-none text-dark active-submenu"> About </a>
+          </li>
+
+          <!-- SERVICES -->
+          <li>
+            <div
+              class="menu-item"
+              data-bs-toggle="collapse"
+              data-bs-target="#serviceMenu"
+            >
+              <span>Services</span>
+              <i class="bi bi-chevron-down"></i>
+            </div>
+
+            <ul class="collapse submenu list-unstyled" id="serviceMenu">
+              <li>
+                <a href="./services.html">Services</a>
+              </li>
+
+              <li>
+                <a href="./servicedetail.html">Service Details</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- PAGES -->
+          <li>
+            <div
+              class="menu-item"
+              data-bs-toggle="collapse"
+              data-bs-target="#pagesMenu"
+            >
+              <span>Pages</span>
+              <i class="bi bi-chevron-down"></i>
+            </div>
+
+            <ul class="collapse submenu list-unstyled" id="pagesMenu">
+              <li><a href="./pages.html">Team</a></li>
+              <li><a href="#">Team Details</a></li>
+              <li><a href="./ourprojects.html">Projects</a></li>
+              <li><a href="#">Project Details</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Price Plan</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">404</a></li>
+            </ul>
+          </li>
+
+          <!-- BLOG -->
+          <li>
+            <div
+              class="menu-item"
+              data-bs-toggle="collapse"
+              data-bs-target="#blogMenu"
+            >
+              <span>Blog</span>
+              <i class="bi bi-chevron-down"></i>
+            </div>
+
+            <ul class="collapse submenu list-unstyled" id="blogMenu">
+              <li>
+                <a href="./blog.html">Blog</a>
+              </li>
+
+              <li>
+                <a href="./blogdetails.html">Blog Details</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- CONTACT -->
+          <li>
+            <a href="./contact.html" class="single-menu"> Contact </a>
+          </li>
+        </ul>
+
+        <!-- PHONE -->
+        <div class="phone-box d-flex align-items-center gap-3">
+          <div class="phone-icon">
+            <i class="bi bi-telephone"></i>
+          </div>
+
+          <h5>(629) 555-0129</h5>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="social-icons d-flex gap-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+       <!-- OPEN BUTTON -->
+    <button
+      class="btn btn-dark"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu"
+    >
+      <i class="bi bi-list"></i>
+    </button>
+
+    </div>
     <section class="about-banner">
   <div class="container-fluid px-4">
     <div class="row ">
