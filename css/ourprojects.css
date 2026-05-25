@@ -390,6 +390,141 @@
     color: white;
     border-color: #18b26a;
 }
+.nav-down-line{
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 30px;
+    padding: 0px;
+}
+.pagination-box{
+    margin-top: 40px;
+}
+
+.page-btn{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.active-page{
+    background-color: #18b26a;
+    color: white;
+    border-color: #18b26a;
+}
+
+.page-btn:hover{
+    background-color: #18b26a;
+    color: white;
+    border-color: #18b26a;
+}
+.mobile-sidebar{
+    width: 320px;
+    background: #fff;
+}
+
+.mobile-menu li{
+    margin-bottom: 10px;
+}
+
+.menu-item{
+    background: #f7f7f7;
+    padding: 15px 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.single-menu{
+    display: block;
+
+    padding: 15px 18px;
+
+    text-decoration: none;
+    color: #222;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.active-menu{
+    color: #18b67a;
+     font-size: 22px;
+}
+
+.submenu{
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.submenu li{
+    margin-bottom: 20px;
+}
+
+.submenu li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.active-submenu{
+    background: #ffffff;
+    padding: 12px 15px;
+    font-weight: 500;
+}
+
+.active-submenu a{
+    color: white !important;
+}
+
+.phone-box{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.phone-icon{
+    width: 45px;
+    height: 45px;
+    background: #18b67a;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.phone-box h5{
+    margin: 0;
+    font-weight: 700;
+}
+
+.social-icons a{
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid #ccc;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: #222;
+}
 @media(max-width:992px){
     .top-bar{
         display: none;
