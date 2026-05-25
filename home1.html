@@ -18,7 +18,7 @@
   </head>
   <body id="top">
     <!-- Top Bar -->
-    <section  class="top-bar py-3">
+    <section class="top-bar py-3">
       <div class="container d-flex justify-content-between">
         <div class="d-flex gap-4 align-items-center">
           <p class="text-white m-0">
@@ -43,8 +43,8 @@
       </div>
     </section>
     <!-- Nav Bar -->
-   <!-- Desktop Nav -->
-    <nav class=" desktop-nav d-none d-lg-block nav-section ">
+    <!-- Desktop Nav -->
+    <nav class="desktop-nav d-none d-lg-block nav-section">
       <div class="container-fluid px-0">
         <div class="bg-white p-3">
           <div class="d-flex justify-content-between align-items-center">
@@ -65,14 +65,16 @@
                 </ul>
               </li>
               <li>
-                <a href="./about.html" class="text-decoration-none fw-bold  text-muted fs-6"
+                <a
+                  href="./about.html"
+                  class="text-decoration-none fw-bold text-muted fs-6"
                   >About</a
                 >
               </li>
               <li class="dropdown-nav">
                 <a
                   href="./services.html"
-                  class="text-decoration-none text-muted fs-6 fw-bold  nav-link-custom"
+                  class="text-decoration-none text-muted fs-6 fw-bold nav-link-custom"
                 >
                   Services <i class="bi bi-chevron-down"></i>
                 </a>
@@ -85,7 +87,7 @@
               <li class="dropdown-nav">
                 <a
                   href="./pages.html"
-                  class="text-decoration-none text-muted fw-bold  fs-6 nav-link-custom"
+                  class="text-decoration-none text-muted fw-bold fs-6 nav-link-custom"
                 >
                   Pages <i class="bi bi-chevron-down"></i>
                 </a>
@@ -104,7 +106,7 @@
               <li class="dropdown-nav">
                 <a
                   href="./blog.html"
-                  class="text-decoration-none text-muted fs-6 fw-bold  nav-link-custom"
+                  class="text-decoration-none text-muted fs-6 fw-bold nav-link-custom"
                 >
                   Blog <i class="bi bi-chevron-down"></i>
                 </a>
@@ -115,7 +117,7 @@
                 </ul>
               </li>
               <li>
-                <a href="#" class="text-decoration-none fw-bold  text-muted fs-6"
+                <a href="#" class="text-decoration-none fw-bold text-muted fs-6"
                   >Contact</a
                 >
               </li>
@@ -129,26 +131,185 @@
       </div>
     </nav>
     <!-- Tab and mobile nav -->
-     <nav class="mobile-nav d-block d-lg-none mobile-nav p-3">
-  <div class="container-fluid">
+    <nav class="mobile-nav d-block d-lg-none mobile-nav p-3">
+      <div class="container-fluid">
+        <div
+          class="mobile-navbar d-flex justify-content-between align-items-center"
+        >
+          <img src="./images/Mobile-view-homeimages/image.png" alt="" />
 
-    <div class="mobile-navbar d-flex justify-content-between align-items-center">
+          <button
+  class="border-0 bg-transparent"
+  data-bs-toggle="offcanvas"
+  data-bs-target="#mobileMenu"
+>
+  <i class="bi bi-list text-white fs-1"></i>
+</button>
+        </div>
+      </div>
+    </nav>
+  
+    
 
-      <img
-        src="./images/Mobile-view-homeimages/image.png"
-        alt=""
-      >
+    <!-- MOBILE SIDEBAR -->
+    <div
+      class="offcanvas offcanvas-start mobile-sidebar d-block d-lg-none"
+      tabindex="-1"
+      id="mobileMenu"
+    >
+      <!-- HEADER -->
+      <div class="offcanvas-header border-bottom">
+        <img src="./images/logo.png" width="120" alt="" />
 
-      <i class="bi bi-list text-white fs-1"></i>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <!-- BODY -->
+      <div class="offcanvas-body">
+        <ul class="list-unstyled mobile-menu">
+          <!-- HOME -->
+          <li>
+            <div
+              class="menu-item active-menu"
+              data-bs-toggle="collapse"
+              data-bs-target="#homeMenu"
+            >
+              <span>Home</span>
+              <i class="bi bi-chevron-down"></i>
+            </div>
+
+            <ul class="collapse show submenu list-unstyled" id="homeMenu">
+              <li class="active-submenu">
+                <a href="./home1.html">Home One</a>
+              </li>
+
+              <li>
+                <a href="#">Home Two</a>
+              </li>
+
+              <li>
+                <a href="#">Home Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ABOUT -->
+          <li>
+            <a href="./about.html" class="single-menu"> About </a>
+          </li>
+
+          <!-- SERVICES -->
+          <li>
+            <div
+              class="menu-item"
+              data-bs-toggle="collapse"
+              data-bs-target="#serviceMenu"
+            >
+              <span>Services</span>
+              <i class="bi bi-chevron-down"></i>
+            </div>
+
+            <ul class="collapse submenu list-unstyled" id="serviceMenu">
+              <li>
+                <a href="./services.html">Services</a>
+              </li>
+
+              <li>
+                <a href="./servicedetail.html">Service Details</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- PAGES -->
+          <li>
+            <div
+              class="menu-item"
+              data-bs-toggle="collapse"
+              data-bs-target="#pagesMenu"
+            >
+              <span>Pages</span>
+              <i class="bi bi-chevron-down"></i>
+            </div>
+
+            <ul class="collapse submenu list-unstyled" id="pagesMenu">
+              <li><a href="./pages.html">Team</a></li>
+              <li><a href="#">Team Details</a></li>
+              <li><a href="./ourprojects.html">Projects</a></li>
+              <li><a href="#">Project Details</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Price Plan</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">404</a></li>
+            </ul>
+          </li>
+
+          <!-- BLOG -->
+          <li>
+            <div
+              class="menu-item"
+              data-bs-toggle="collapse"
+              data-bs-target="#blogMenu"
+            >
+              <span>Blog</span>
+              <i class="bi bi-chevron-down"></i>
+            </div>
+
+            <ul class="collapse submenu list-unstyled" id="blogMenu">
+              <li>
+                <a href="./blog.html">Blog</a>
+              </li>
+
+              <li>
+                <a href="./blogdetails.html">Blog Details</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- CONTACT -->
+          <li>
+            <a href="./contact.html" class="single-menu"> Contact </a>
+          </li>
+        </ul>
+
+        <!-- PHONE -->
+        <div class="phone-box d-flex align-items-center gap-3">
+          <div class="phone-icon">
+            <i class="bi bi-telephone"></i>
+          </div>
+
+          <h5>(629) 555-0129</h5>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="social-icons d-flex gap-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+       <!-- OPEN BUTTON -->
+    <button
+      class="btn btn-dark"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu"
+    >
+      <i class="bi bi-list"></i>
+    </button>
 
     </div>
 
-  </div>
-</nav>
+  
+   
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="container-fluid">
-        <div class="row align-items-center mt- pb-5 ">
+        <div class="row align-items-center mt- pb-5">
           <!-- left colum -->
           <div class="col-lg-6 hero-leftcol mt-5">
             <h5 class="text-success">IT solutions for the new era</h5>
@@ -438,8 +599,8 @@
             </div>
           </div>
         </div>
-        <div class="row mt-4 ">
-         <div class="col-lg-4 col-md-4 col-sm-12 project-card">
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-4 col-sm-12 project-card">
             <img
               class="img-fluid rounded-4 project-img mt-4"
               src="./images/Mobile-view-homeimages/image (11).png"
@@ -457,7 +618,7 @@
               </div>
             </div>
           </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 project-card">
+          <div class="col-lg-4 col-md-4 col-sm-12 project-card">
             <img
               class="img-fluid rounded-4 project-img mt-4"
               src="./images/Mobile-view-homeimages/image (12).png"
@@ -501,7 +662,7 @@
       <div class="container-fluid">
         <div class="row g-0 align-items-center">
           <!-- LEFT -->
-          <div class="col-lg-7 col-md-12 col-sm-12  success-content">
+          <div class="col-lg-7 col-md-12 col-sm-12 success-content">
             <h5 class="text-success">Buisness Process</h5>
             <h2 class="success-heading">
               Easy Way Build Success your Buisness Pla
@@ -567,8 +728,8 @@
     <!-- Project review -->
     <section>
       <div class="container-fluid rounded-4 reviewbg">
-        <div class="row ">
-          <div class="col-lg-4 col-md-4  col-sm-12 border-lg-end">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 border-lg-end">
             <div class="counter-box d-flex align-items-center gap-4">
               <i class="bi bi-people counter-icon"></i>
 
@@ -579,7 +740,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4  col-sm-12 border-right">
+          <div class="col-lg-4 col-md-4 col-sm-12 border-right">
             <div class="counter-box d-flex align-items-center gap-4">
               <i class="bi bi-clipboard-check counter-icon"></i>
 
@@ -786,7 +947,7 @@
           </h2>
 
           <div class="row mt-5 align-items-center justify-content-center">
-            <div class="col-2" >
+            <div class="col-2">
               <img
                 src="./images/Mobile-view-homeimages/brand1.png"
                 class="img-fluid client-logo"
@@ -794,20 +955,32 @@
               />
             </div>
 
-            <div class="col-2  ">
-              <img  class="img-fluid client-logo" src="./images/Mobile-view-homeimages/brand2.png" />
+            <div class="col-2">
+              <img
+                class="img-fluid client-logo"
+                src="./images/Mobile-view-homeimages/brand2.png"
+              />
             </div>
 
-            <div class="col-2  ">
-              <img  class="img-fluid client-logo" src="./images/Mobile-view-homeimages/brand3.png" />
+            <div class="col-2">
+              <img
+                class="img-fluid client-logo"
+                src="./images/Mobile-view-homeimages/brand3.png"
+              />
             </div>
 
-            <div class="col-2  ">
-              <img  class="img-fluid client-logo" src="./images/Mobile-view-homeimages/brand4.png" />
+            <div class="col-2">
+              <img
+                class="img-fluid client-logo"
+                src="./images/Mobile-view-homeimages/brand4.png"
+              />
             </div>
 
-            <div class="col-2  ">
-              <img  class="img-fluid client-logo" src="./images/Mobile-view-homeimages/brand5.png" />
+            <div class="col-2">
+              <img
+                class="img-fluid client-logo"
+                src="./images/Mobile-view-homeimages/brand5.png"
+              />
             </div>
           </div>
         </div>
@@ -1157,12 +1330,38 @@
             <h3 class="footer-title">Useful Links</h3>
 
             <ul class="footer-links">
-              <li><a class="text-decoration-none text-white" href="./about.html">What We Do</a></li>
-              <li><a class="text-decoration-none text-white" href="./pages.html">Our Team</a></li>
-              <li><a class="text-decoration-none text-white" href="./ourprojects.html">Our Projects</a></li>
-              <li><a class="text-decoration-none text-white" href="./pages.html">Faq ask</a></li>
-              <li><a class="text-decoration-none text-white" href="./contact.html">Contact Us</a></li>
-              <li><a class="text-decoration-none text-white" href="./blog.html">Blog</a></li>
+              <li>
+                <a class="text-decoration-none text-white" href="./about.html"
+                  >What We Do</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-white" href="./pages.html"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration-none text-white"
+                  href="./ourprojects.html"
+                  >Our Projects</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-white" href="./pages.html"
+                  >Faq ask</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-white" href="./contact.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-white" href="./blog.html"
+                  >Blog</a
+                >
+              </li>
             </ul>
           </div>
 
