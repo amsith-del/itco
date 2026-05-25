@@ -857,6 +857,105 @@ hr{
 .mobile-nav{
    background-color: #0d4b46;
 }
+.mobile-sidebar{
+    width: 320px;
+    background: #fff;
+}
+
+.mobile-menu li{
+    margin-bottom: 10px;
+}
+
+.menu-item{
+    background: #f7f7f7;
+    padding: 15px 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.single-menu{
+    display: block;
+
+    padding: 15px 18px;
+
+    text-decoration: none;
+    color: #222;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.active-menu{
+    color: #18b67a;
+}
+
+.submenu{
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.submenu li{
+    margin-bottom: 20px;
+}
+
+.submenu li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.active-submenu{
+    background: #18b67a;
+    padding: 12px 15px;
+}
+
+.active-submenu a{
+    color: white !important;
+}
+
+.phone-box{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.phone-icon{
+    width: 45px;
+    height: 45px;
+    background: #18b67a;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.phone-box h5{
+    margin: 0;
+    font-weight: 700;
+}
+
+.social-icons a{
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid #ccc;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: #222;
+}
 @media(max-width:992px){
     .top-bar{
         display: none;
@@ -925,6 +1024,9 @@ hr{
 }
 .small-about-img{
     width: 200px;
+}
+.btn{
+    padding:15px 30px !important ;
 }
 .about-content{
     padding-left: 20px !important;
